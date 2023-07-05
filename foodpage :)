@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax webpage</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 15px;
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        justify-content: center;
+    align-content: center;
+    z-index: -1;
+    transform: translateZ(-40px) scale(4);
+    }
+
+.foreground{
+    margin-top: 520px;
+    margin-left: -110px;
+    position:absolute;
+        height: 30%;
+        width: 30%;
+        justify-content:last baseline;
+        align-content: last baseline;
+        object-fit:contain;
+        z-index: -1;
+        
+    }
+    .head{
+        margin-left: 500px;
+        margin-top: 350px;
+        color:chartreuse;
+        position: relative;
+        height: 100%;
+        display: flex;
+        transform-style: preserve-3d;
+        z-index: -1;
+        justify-content:flex-end;
+        align-content: flex-end;
+        transform: translateZ(-50%) scale(30);
+        font-size: 8rem;
+        text-shadow: 0 ,0 ,10px rgba(0, 0, 0, 0.4);
+        letter-spacing: 4px;
+    }
+    section{
+        background-color: rgb(45,45,45);
+        color:white;
+        padding: 5 rem;
+    }
+
+    .BG1{
+        background-image: url(Kashmiri-rajma.jpg);
+        width:1280px;
+        height:700px;
+    }
+    .BG2{
+        background-image: url(Masala-dosa.jpg);
+        width: 1280px;
+        height: 720px;
+    }
+    .BG3{
+        background-image: url(Pav-Bhaji-scaled.jpg);
+        width: 1280px;
+        height: 720px;
+    }
+    .SECHEADING{
+        font-size: 5 rem;
+        padding: 0 10 rem;
+        color: antiquewhite;
+    }
+    .TEXT{
+        font-size: 1.5rem;
+        padding: 0 10 rem;
+        margin: 5rem 0 ;
+    }
+    .TEXT1{
+        font-size: 1.5rem;
+        padding: 0 10 rem;
+        margin: 5rem 0 ;
+        color: white;
+    }
+    .BG{
+        position: relative;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        
+    }
+    .desc{
+        position: absolute;
+        background-color: black;
+        color: aliceblue;
+        padding: 0.5rem 2.5rem;
+        top: 50%;
+        left: 35%;
+        font-size: 2.5rem;
+        font-weight: 600;
+
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+<div class="container">
+    <img src="background.jpg" class="background">
+<img src="https://img.freepik.com/premium-vector/cute-little-chef-bringing-dishes_33070-2255.jpg?w=2000" width="250px" height="250" class="foreground">
+<h1 class="head"> <B>Asian-Cuisine</B></h1>
+</div>
+
+<section>
+    <h2 class="SECHEADING"> CUISINE TIME !!</h2>
+    <P class="TEXT1">A cuisine is a style of cooking characterized by distinctive ingredients, techniques and dishes, and usually associated with a specific culture or geographic region.
+         Regional food preparation techniques, customs, and ingredients combine to enable dishes unique to a region.<BR>
+        A cuisine is a style of cooking characterized by distinctive ingredients, techniques and dishes, and usually associated with a specific culture or geographic region. 
+        Regional food preparation techniques, customs, and ingredients combine to enable dishes unique to a region.[1]
+
+A cuisine is partly determined by ingredients that are available locally or through trade. 
+Regional ingredients are developed and commonly contribute to a regional or national cuisine, such as Japanese rice in Japanese cuisine.
+ Likewise, the most popular cuisines in the world include Indian cuisine, Chinese cuisine, Mexican cuisine, Greek and Italian cuisines.
+    </P>
+    <DIV class="BG BG1">
+        <h2 class="desc">RAJMA CHAWAL</h2></DIV>
+        <P class="TEXT">Rajma is a popular dish in the Northern states of India, as well as in Pakistan and Nepal.
+
+            Some of the best Rajma is said to be grown in the north Indian states of Himachal Pradesh, Uttarakhand and the Jammu region of Jammu and Kashmir.
+             Rajma Chawal served with chutney of Anardana (Pomegranate) is a famous dish in Peerah, a town in Ramban district of Jammu & Kashmir, and Assar/Baggar in Doda district of Jammu & Kashmir.
+             [citation needed]
+            
+            Going further, the Rajma of Chinta Valley in Doda district, a short distance from the town of Bhaderwah of Jammu province are said to be amongst the most popular.
+             These are smaller in size than most Rajma grown in plains and have a slightly sweetish taste.[5]</P>
+    
+
+    <DIV class="BG BG2">
+        <h2 class="desc">MASALA DOSA</h2></DIV>
+        <P class="TEXT">Masala Dosa, also called Masale dosey ( ಮಸಾಲೆ ದೋಸೆ ), is a South Indian dish. It is a type of dosa and has its origin in the town of Udupi in Karnataka.
+             It is made from rice, lentils, Urad dal, Chana dal, fenugreek, puffed rice, Toor dal, dry red chilli and served with potato curry, chutneys, and sambar.
+              It is popular in South India,[4] but can be found in all other parts of the country[5][6] and overseas.[7][8] In South India, the preparation of masala dosa varies from city to city.
+            There are variations in Masala dosa like Davanagere butter dosa and paper masala dosa.</P>
+    
+
+
+    <DIV class="BG BG3">
+        <h2 class="desc">PAAV BHAAJI</h2></DIV>
+        <P class="TEXT">Pav bhaji is a spiced mixture of mashed vegetables in a thick gravy served with bread. Vegetables in the curry may commonly include potatoes, onions, carrots, chillies, peas, bell peppers and tomatoes.
+             Street sellers usually cook the curry on a flat griddle (tava) and serve the dish hot. 
+            A soft white bread roll is the usual accompaniment to the curry, but this does not preclude the use of other bread varieties such as chapati, roti or brown bread.</P>
+    
+
+
+
+    
+</section>
+
+    </div>
+    
+</body>
+</html>
